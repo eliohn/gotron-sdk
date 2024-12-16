@@ -5,6 +5,7 @@ package keystore
 
 import (
 	"github.com/eliohn/gotron-sdk/pkg/address"
+	"github.com/ethereum/go-ethereum/crypto"
 )
 
 func RecoverPubkey(hash []byte, signature []byte) (address.Address, error) {
